@@ -1,7 +1,7 @@
 public class Gcd {
 	public static void main(String[] args) {
 		/*
-		 * 返回n個數的最大公因數
+		 * 鎵惧埌n鍊嬫暩鐨勬渶澶у叕鍥犳暩
 		*/
 		
 		int[] nums = {32, 8, 16};
