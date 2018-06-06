@@ -5,9 +5,9 @@ import java.util.Iterator;
 public class WordCount {
 	public static void main(String[] args) {
 		/*
-		 * ½o¶¨Ò»¶Î¶ÌÎÄ£¬Ó¡³öÔÚ¶ÌÎÄÖĞ³ö¬FµÚÒ»¶àÅcµÚ¶ş¶àµÄÎÄ×Ö ex: I have a pen, I have a apple£¬µ«²»°üº¬˜Ëüc·ûÌ–
-		 * ´óĞ¡Œ‘Ò•éÏàÍ¬
-		 * Ó¡³ö
+		 * çµ¦å®šä¸€æ®µçŸ­æ–‡ï¼Œå°å‡ºåœ¨çŸ­æ–‡ä¸­å‡ºç¾ç¬¬ä¸€å¤šèˆ‡ç¬¬äºŒå¤šçš„æ–‡å­— ex: I have a pen, I have a appleï¼Œä½†ä¸åŒ…å«ç‰¹æ®Šç¬¦è™Ÿä»¥åŠæ•¸å­—
+		 * å¤§å°å¯«è¦–ç‚ºç›¸åŒ
+		 * å°å‡º
 		 * i(2)
 		 * have(2)
 		 * a(2)
@@ -46,7 +46,7 @@ public class WordCount {
 		
 		Iterator cur_key = map.keySet().iterator();
 		
-		//ÕÒ×î´óÖµ
+		//æ‰¾æœ€å¤§å€¼
 		int max = 0;
 		while(cur_key.hasNext()) {
 			String key = (String) cur_key.next();
@@ -55,7 +55,7 @@ public class WordCount {
 			}
 		}
 		
-		//Ó¡³ö×î´ó
+		//å°å‡ºæœ€å¤§
 		cur_key = map.keySet().iterator();
 		while(cur_key.hasNext()) {
 			String key = (String) cur_key.next();
@@ -64,7 +64,7 @@ public class WordCount {
 			}
 		}
 		
-		//ÕÒµÚ¶ş´ó
+		//æ‰¾ç¬¬äºŒå¤§
 		int second_max = 0;
 		cur_key = map.keySet().iterator();
 		
@@ -75,7 +75,7 @@ public class WordCount {
 			}
 		}
 		
-		//Ó¡³öµÚ¶ş´ó
+		//å°å‡ºç¬¬äºŒå¤§
 		cur_key = map.keySet().iterator();
 		while(cur_key.hasNext()) {
 			String key = (String) cur_key.next();
