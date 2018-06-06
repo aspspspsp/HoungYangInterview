@@ -15,6 +15,9 @@ public class Gcd {
 		int result = 0;
 		
 		// WRITE YOU CODE HERE -START-
+		if(nums.length == 1)
+			reutrn nums[0];
+		
 		result = gcd(nums[0], nums[1]);
 		
 		if(nums.length < 3)
