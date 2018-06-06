@@ -3,8 +3,8 @@ import java.util.ArrayList;
 public class Combinations {
 	public static void main(String[] args) {
 		/*
-		 * ӡ���M�� ex: A,B,C,D
-		 * ����A,B,AB,C,AC,BC,ABC,D,AD,BD,ABD,CD,ACD,BCD,ABCD
+		 * 印出所有組合 ex: A,B,C,D
+		 * 可以印出:A,B,AB,C,AC,BC,ABC,D,AD,BD,ABD,CD,ACD,BCD,ABCD
 		*/
 		ArrayList<String> strings = new ArrayList<String>();
 		strings.add("A");
@@ -23,7 +23,9 @@ public class Combinations {
 		// WRITE YOU CODE HERE -START-
 		int strings_size = strings.size();
 		
-		int n = (int) (Math.pow(2, strings_size) - 1);	
+		int n = (int) (Math.pow(2, strings_size) - 1);
+		
+		// 計算類似00100的遮罩，0不顯示，1則顯示該位元所代表的文字 ex: 1001 => AD
 		for(int i = 1; i <= n; i ++) {
 			String binaryNum = Integer.toBinaryString(i);			
 			StringBuilder cover = new StringBuilder(binaryNum);
