@@ -29,10 +29,11 @@ public class WordCount {
 		
 		// WRITE YOU CODE HERE -START-
 		HashMap<String, Integer> map = new HashMap<String, Integer>();
-		
+		paragraph = paragraph.toLowerCase().replaceAll("[^a-z]", " ");
+
 		String[] words = paragraph.split(" ");
 		for(int i = 0; i < words.length; i ++) {
-			String word = words[i].toLowerCase().replaceAll("[^a-z]", "");
+			String word = words[i];
 			if(word.length() == 0)
 				continue;
 			
